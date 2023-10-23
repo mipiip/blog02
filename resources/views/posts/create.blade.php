@@ -19,16 +19,10 @@
             </div>
             <div class='body'>
                  <h2>Body</h2>
-                 <textarea name="post[body]" placeholder="今日も1日お疲れさまでした。">{{ old ('post.body') }}</textarea>
                  <p class='body__error' style="color:red">{{ $errors->first('post.body')}} </p>
             </div>
-            <input type="submit" value="store"/>
+            <input type="submit" value="保存"/>
         </form>
-        <div class="footer">
-                 <a href="/">戻る</a>
-        </div>
+        <div class="back">[<a href="/">back</a>]</div> 
     </body>
-</html
-
-
-        
+</html>
